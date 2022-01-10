@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <div id="body">
+        <p>TO DO list:</p>
+        <p>Eat</p>      
+        <p>sleep</p>
+        <p>drink</p>
+        <!-- write javascript -->
+    </div>
+
+    <input id="text" type="text" placeholder="enter todo" />
+    <input type="button" value="submit" onclick="addToDo()" />
+</body>
+
+<style>
+    #react{
+        color: red;
+    }
+</style>
+
+<script>
+    function addToDo(e) {
+        const input = document.getElementById("text")
+        const userData = input.value
+        const body = document.getElementById("body")
+        const para = document.createElement('p')
+        para.innerHTML = userData
+        console.log(para, "this is para element")
+        body.appendChild(para)
+        input.value = ""
+        "<p><span>hi</span></p>"
+
+        
+    }
+
+    function sum(a,b) {
+        return a+b
+    }
+
+    // It is not Reactive => react will not react to your data changes. You will to tell react yourself
+    // UI = summation of components (small building blocks, bottom up  approach)
+    // functional components
+
+
+    // we used to interact with html files / markup files
+    // we donot interact/write with/in html file
+</script>
+
+</html>

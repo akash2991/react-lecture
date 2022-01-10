@@ -1,0 +1,32 @@
+.tile{
+    width: 100px;
+    height: 100px;
+    /* background-color: green; */
+    border: 1px solid #0000ff;
+    /* color: white; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px;
+    margin-left: 20px; */
+}
+
+.colorOne {
+    background-color: black;
+}
+
+.colorTwo {
+    background-color: red;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.side {
+    display: flex;
+    flex-direction: column-reverse;
+}
